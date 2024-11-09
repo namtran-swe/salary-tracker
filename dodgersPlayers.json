@@ -1,74 +1,84 @@
-[
-	{
-		"team-name": "Dodgers",
-		"city": "Los Angeles",
-		"players": [
-			{
-				"name": "Shohei Ohtani",
-				"stats": {
-					"games": 159,
-					"at-bats": 636,
-					"hits": 197,
-					"home-runs": 54,
-					"rbis": 130,
-					"runs": 134,
-					"strikeouts": 162,
-					"fwar": 9.1,
-					"bwar": 9.2
-				},
-				"contract": {
-					"salary": 700000000,
-					"length": 10,
-					"start-year": "2024"
-				},
-				"earnings": {
-					"current-team": 2000000,
-					"career": {
-						"years": 7,
-						"total": 44269259
-					}
-				}
-			},
-			{
-				"name": "Mookie Betts",
-				"stats": {
-					"games": 116,
-					"at-bats": 450,
-					"hits": 130,
-					"home-runs": 19,
-					"rbis": 75,
-					"runs": 75,
-					"strikeouts": 57,
-					"fwar": 4.4,
-					"bwar": 4.8
-				},
-				"contract": {
-					"salary": 3655000000,
-					"length": 12,
-					"start-year": "2021"
-				},
-				"earnings": {
-					"current-team": 90000000,
-					"career": {
-						"years": 10,
-						"total": 128634598
-					}
-				}
-			},
-			{
-				"name": "Freddie Freeman",
-				"stats": {
-					"games": 147,
-					"at-bats": 542,
-					"hits": 153,
-					"home-runs": 22,
-					"rbis": 89,
-					"runs": 81,
-					"strikeouts": 100,
-					"fwar": 4.0,
-					"bwar": 4.7
-				}
-			}
-		]
-	}
-]
+{
+	"team-name":"Dodgers",
+	"city":"Los Angeles",
+	"players":[
+	   {
+		  "name":"Shohei Ohtani",
+		  "stats":{
+			 "games":159,
+			 "at-bats":636,
+			 "hits":197,
+			 "home-runs":54,
+			 "rbis":130,
+			 "runs":134,
+			 "strikeouts":162,
+			 "fwar":9.1,
+			 "bwar":9.2
+		  },
+		  "contract":{
+			 "salary":700000000,
+			 "length":10,
+			 "start-year":"2024"
+		  },
+		  "earnings":{
+			 "annual-avg":70000000,
+			 "career":{
+				"years":7,
+				"total":44269259
+			 }
+		  }
+	   },
+	   {
+		  "name":"Mookie Betts",
+		  "stats":{
+			 "games":116,
+			 "at-bats":450,
+			 "hits":130,
+			 "home-runs":19,
+			 "rbis":75,
+			 "runs":75,
+			 "strikeouts":57,
+			 "fwar":4.4,
+			 "bwar":4.8
+		  },
+		  "contract":{
+			 "salary":365000000,
+			 "length":12,
+			 "start-year":"2021"
+		  },
+		  "earnings":{
+			 "annual-avg":30416667,
+			 "career":{
+				"years":10,
+				"total":128634598
+			 }
+		  }
+	   },
+	   {
+		  "name":"Freddie Freeman",
+		  "stats":{
+			 "games":147,
+			 "at-bats":542,
+			 "hits":153,
+			 "home-runs":22,
+			 "rbis":89,
+			 "runs":81,
+			 "strikeouts":100,
+			 "fwar":4.0,
+			 "bwar":4.7
+		  },
+		  "contract":{
+			 "salary":162000000,
+			 "length":6,
+			 "start-year":"2022"
+		  },
+		  "earnings":{
+			 "annual-avg":27000000,
+			 "career":{
+				"years":14,
+				"total":183739279
+			 }
+		  }
+	   }
+	]
+ }

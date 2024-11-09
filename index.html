@@ -11,12 +11,16 @@
 
     <div class="container my-5">
         <div class="text-center mb-4">
-            <h1 class="display-4" style="color: white;">MLB Player Salary Tracker</h1>
+            <h1 id="title" class="display-4" style="color: white;">MLB Player Salary Tracker</h1>
+        </div>
+
+        <div>
+            <h2 id="player-name" style="color: white; margin-left: 5px;"></h2>
         </div>
 
         <div class="card p-4 mb-4">
-            <h3>Earned From Dodgers: <span style="color: #1E90FF;">$2,000,000</span> </h3>
-            <h4>Remaining: <span class="text-muted">$698,000,000</span> </h4>
+            <h3>Earned From Dodgers: <span id="currentEarnings" style="color: #1E90FF;"></span> </h3>
+            <h4>Remaining: <span id="remainingContract" class="text-muted"></span> </h4>
             <div class="progress my-3">
                 <div id="progress-bar" class="progress-bar" role="progressbar" style="color: #1E90FF;"
                     aria-valuemin="0" aria-valuemax="100"></div>
@@ -24,7 +28,7 @@
         </div>
 
         <div class="alert alert-info text-center">
-            <strong>Heads up!</strong> Ohtani has earned <span id="earned-counter">$0.00</span> while you have been on this site.
+            <strong>Heads up!</strong> Ohtani has earned <span id="earned-counter"></span> while you have been on this site.
         </div>
 
         <div class="row text-center">
@@ -43,32 +47,32 @@
         </div>
 
         <div id="earning-header">
-            <h3 style="color: white;">As a Dodger, Shohei Ohtani has earned</h3>
+            <h3 style="color: white;">As a Dodger, <span id="player-name"></span> has earned</h3>
         </div>
 
         <div class="row text-center">
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$10,152</h4>
+                    <h4 id="hits"></h4>
                     <small class="text-muted">per Hit</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">197 Hits</div>
+                    <div class="text-muted"><span id="total-hits"></span> Hits</div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$3,145</h4>
+                    <h4 id="at-bats"></h4>
                     <small class="text-muted">per At Bat</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">636 AB</div>
+                    <div class="text-muted"><span id="total-ab"></span> AB</div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$37,037</h4>
+                    <h4 id="home-runs"></h4>
                     <small class="text-muted">per Home Run</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">54 HR</div>
+                    <div class="text-muted"><span id="total-hr"></span> HR</div>
                 </div>
             </div>
         </div>
@@ -76,26 +80,26 @@
         <div class="row text-center">
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$15,385</h4>
+                    <h4 id="rbi"></h4>
                     <small class="text-muted">per RBI</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">130 RBI</div>
+                    <div class="text-muted"><span id="total-rbi"></span> RBI</div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$14,925</h4>
+                    <h4 id="runs"></h4>
                     <small class="text-muted">per Run</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">134 R</div>
+                    <div class="text-muted"><span id="total-runs"></span> R</div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$219,780</h4>
+                    <h4 id="fwar"></h4>
                     <small class="text-muted">per fWAR</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">9.1 fWAR</div>
+                    <div class="text-muted"><span id="total-fwar"></span> fWAR</div>
                 </div>
             </div>
         </div>
@@ -103,26 +107,26 @@
         <div class="row text-center">
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$217,391</h4>
+                    <h4 id="bwar"></h4>
                     <small class="text-muted">per bWAR</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">9.2 bWAR</div>
+                    <div class="text-muted"><span id="total-bwar"></span> bWAR</div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$12,579</h4>
+                    <h4 id="games"></h4>
                     <small class="text-muted">per Games Played</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">159 GP</div>
+                    <div class="text-muted"><span id="total-games"></span> GP</div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 mb-3">
                 <div class="card p-3">
-                    <h4>$12,346</h4>
+                    <h4 id="so"></h4>
                     <small class="text-muted">per Strikeout</small>
                     <hr style="width: 100%; text-align: center; background-color: gray;">
-                    <div class="text-muted">162 SO</div>
+                    <div class="text-muted"><span id="total-so"></span> SO</div>
                 </div>
             </div>
         </div>
